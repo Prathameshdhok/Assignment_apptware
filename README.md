@@ -43,7 +43,7 @@ Assignment_apptware/
 
 Make sure you have:
 
-* Java 17 or higher
+* Java 8 or higher
 * Maven
 * Git
 * IDE (Eclipse / IntelliJ recommended)
