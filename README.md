@@ -132,6 +132,30 @@ Expected Response:
 ["Keyboard","Mouse"]
 ```
 
+New Enhanced API (Full Product Details)
+This endpoint returns complete product information (ID, name, and price) for products priced under $50.
+
+Open in browser:
+
+```
+(http://localhost:9091/api/search/affordable/details)
+```
+Expected Response:
+
+```json
+[
+  {
+    "id": 3,
+    "name": "Keyboard",
+    "price": 45
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "price": 20
+  }
+]
+```
 ---
 
 #  How It Works
@@ -140,6 +164,8 @@ Expected Response:
 2. Search Service calls Inventory Service via REST API.
 3. Products priced under $50 are filtered using Java Stream API.
 4. The result is sorted and returned as a list of product names.
+5. The enhanced endpoint returns full product details (ID, name, and price).
+6. Both endpoints are maintained to ensure backward compatibility.
 
 ---
 
